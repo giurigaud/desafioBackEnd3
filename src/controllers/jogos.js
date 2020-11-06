@@ -29,9 +29,10 @@ function meuMap(array, funcao) {
   }
   return novoArray;
 }
-const tabela = [];
 
 const obterClassificaçao = async (ctx) => {
+  const tabela = [];
+
   const result = await Jogos.obterClassificaçao();
 
   const resultPontos = result.map((dado) => {
