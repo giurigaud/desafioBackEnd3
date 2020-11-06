@@ -7,7 +7,7 @@ require("dotenv").config();
 
 const PORT = process.env.PORT || 8000;
 const server = new Koa();
-
+console.log("ola");
 server.use(cors());
 server.use(bodyparser());
 server.use(router.routes());
